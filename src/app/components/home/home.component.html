@@ -1,0 +1,31 @@
+<app-nav-bar></app-nav-bar>
+<br>
+  <div class="row">
+    <div class="col-md-2">
+      <ul>
+        <li>
+          <a [routerLink]="">Site</a>
+        </li>
+        <hr>
+        
+      </ul>
+    </div>
+
+    <div class="col-md-10">
+
+      <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false">
+
+        <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)" [latitude]="m.lat" [longitude]="m.lng"
+          [label]="m.label" [markerDraggable]="m.draggable" (dragEnd)="markerDragEnd(m, $event)">
+
+          <agm-info-window>
+            <a [routerLink]="" (click)="goToStatic(m.label)">Graph</a>
+            <!-- <br>
+            <a [routerLink]="" (click)="goToDynamic(m.label)">Dynamic</a> -->
+          </agm-info-window>
+
+        </agm-marker>
+
+      </agm-map>
+    </div>
+  </div>

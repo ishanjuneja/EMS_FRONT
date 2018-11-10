@@ -1,0 +1,47 @@
+agm-map {
+    height:465px;
+    width:1000px;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    color:#66CCFF;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+
+  ul li:hover{
+      font-size: 110%
+  }
+
+  a:hover { color: darkslateblue; }
+  
+  
+  a:link {text-decoration:none;}
+  a:visited {text-decoration:none;}
+  a:hover {text-decoration:none;}
+  a:active {text-decoration:none;}
+
+  .widget-container {
+    
+    background-color: white;
+}
+ 
+.widget {
+    position: absolute;
+    background-color: darkgray;
+}
+ 
+.widget.moving {
+    z-index: z-index + 1;
+}
+ 
+.widget-placeholder {
+    position: absolute;
+}

@@ -1,0 +1,55 @@
+
+body {
+  font-family:"Myriad Pro";
+  margin:0;
+  background-color:#ecedee;
+  }
+  
+  #header {
+  width:100%;
+  height:60px;
+  background-color:#3399FF;
+  text-align: center;
+  }
+  
+  #header>h1{
+  padding:10px;
+  margin:0px auto;
+  color:#FFFFFF;
+  font-size: 30px;
+  font-family: 'Times New Roman';
+  }
+  
+  
+  ul {
+      text-align: right;
+      list-style: none;
+      margin-top: -35px;
+  }
+  
+  ul li {
+      display: inline-block;
+      padding-left: 10px;
+      font-size: 15px;
+  }
+  
+  
+  ul li:last-child{
+      padding-right: 10px;
+  }
+  
+  a {
+    color:#66CCFF;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+  a:hover { color:#FFFFFF; }
+  
+  
+  a:link {text-decoration:none;}
+  a:visited {text-decoration:none;}
+  a:hover {text-decoration:none;}
+  a:active {text-decoration:none;}

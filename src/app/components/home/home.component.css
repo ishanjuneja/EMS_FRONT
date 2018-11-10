@@ -1,0 +1,24 @@
+agm-map {
+    height:465px;
+    width:1000px;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    color:#66CCFF;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+  a:hover { color: darkslateblue; }
+  
+  
+  a:link {text-decoration:none;}
+  a:visited {text-decoration:none;}
+  a:hover {text-decoration:none;}
+  a:active {text-decoration:none;}

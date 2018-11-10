@@ -1,0 +1,9 @@
+<div id="staticGraph" class="col-md-10" style="position: absolute" [ngWidgetContainer]="{'resizeable': true, 'fix_to_grid':true, 'max_rows':2, 'max_cols':4}">
+    <div [ngWidget]>
+        <button (click)="openStaticWidget()">open</button>
+      <app-static-graph></app-static-graph>
+    </div>
+    <div [ngWidget]>
+        <app-dynamic-graph></app-dynamic-graph>
+    </div>
+</div>
