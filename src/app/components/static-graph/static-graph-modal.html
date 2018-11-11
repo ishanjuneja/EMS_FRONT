@@ -1,6 +1,5 @@
-<!-- 
 
-
+<div>
 <mat-form-field>
     <input matInput [matDatepicker]="dp3" placeholder="Start Date" disabled (dateChange)="startDateSelected('change', $event)">
     <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
@@ -17,10 +16,10 @@
     <button type="button" class="btn btn-primary px-2" >
             <i class="material-icons" (click)="refreshStaticGraph()">refresh</i>
     </button>
-    
-</div> -->
-<div>
-    <p>HI</p>
-<app-dynamic-graph></app-dynamic-graph>
+    <div >
+        <canvas  class="chart chart-bar" id="canvass" height="500" width="500">{{ chart }}</canvas>
+        <!-- <app-dynamic-graph></app-dynamic-graph> -->
+    </div>
+</div>
 
 </div>

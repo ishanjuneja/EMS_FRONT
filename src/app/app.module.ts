@@ -36,7 +36,8 @@ const appRoutes: Routes = [
   { path: 'stGraph', component: StaticGraphComponent },
   {path:'siteInfo',component:WidgethomeComponent},
   { path: 'home',  component: HomeComponent }, // <-- delete this line
-  { path: '',   redirectTo: '/login', pathMatch: 'full' }
+  { path: '',   redirectTo: '/login', pathMatch: 'full' },
+  { path:'modal',component:StaticGraphDialog}
 ];
 
 @NgModule({

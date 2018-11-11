@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'Chart.js';
-import { ViewChild } from '@angular/core'
+import { ViewChild } from '@angular/core';
+import * as CanvasJS from '../../../assets/canvasjs/canvasjs.min';
+import * as google from '../../../assets/loader.js';
 @Component({
   selector: 'app-dynamic-graph',
   templateUrl: './dynamic-graph.component.html',
@@ -32,49 +34,49 @@ export class DynamicGraphComponent implements OnInit {
 
 
   ngOnInit() {
+    
     this.dynamicChart = new Chart('canvasd', {
-      type: 'line',
-      data: {
-        labels: [],
-        datasets: [
-          {
-            label: 'voltage',
-            data: [],
-            borderColor: "#3cba9f",
-            fill: true
-          },
-          {
-            label: 'current',
-            data: [],
-            borderColor: "#ffcc00",
-            fill: true
-          },
-        ]
-      },
-      options: {
-        maintainAspectRatio:true,
-        legend: {
-          display: true
+        type: 'line',
+        data: {
+          labels: [],
+          datasets: [
+            {
+              label: 'voltage',
+              data: [],
+              borderColor: "#3cba9f",
+              fill: true
+            },
+            {
+              label: 'current',
+              data: [],
+              borderColor: "#ffcc00",
+              fill: true
+            },
+          ]
         },
-        scales: {
+        options: {
+          maintainAspectRatio:true,
+          legend: {
+            display: true
+          },
+          scales: {
+            
+              xAxes: [{
+                  ticks: {
+                      min: 0,
+                      beginAtZero:false
+                  }
+              }],
+              yAxes: [{
+                  ticks: {
+                      min: 0,
+                    
+                  }
+              }]
           
-            xAxes: [{
-                ticks: {
-                    min: 0,
-                    beginAtZero:false
-                }
-            }],
-            yAxes: [{
-                ticks: {
-                    min: 0,
-                  
-                }
-            }]
-        
+          }
         }
-      }
-    });
-
+      });
 
 
 
